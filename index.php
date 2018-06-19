@@ -128,7 +128,7 @@ $dw = menuDuJour::getDay(); ?>
 
                       <span>Les sauces :</span>
                       <p>3 fromages<br/>
-                      Arrabbitta<br/>
+                      Arrabiatta<br/>
                       Aurora<br/>
                       Bolognaise<br/>
                       Carbonara Thon / Boeuf / Lardons / Pesto Verde<br/>
@@ -137,7 +137,7 @@ $dw = menuDuJour::getDay(); ?>
                       Pesto Verde / Rosso<br/>
                       Piccantina<br/>
                       Poulet Curry / Oignon / Poivre / Moutarde<br/>
-                      Poulet Méditérranéene (don't ask) / Champignons noirs<br/>
+                      Poulet Méditerranéene (don't ask) / Champignons noirs<br/>
                       Saumon crème</p><br/><br/>
 
                       <span>Les fromages :</span><p> emmental, parmigiano</p><br/><br/>
