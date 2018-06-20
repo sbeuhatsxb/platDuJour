@@ -75,7 +75,7 @@ $dw = menuDuJour::getDay(); ?>
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-preview">
-            <a href="http://sbiot.fr/accueil/plats-jour-de-semaine/">
+            <a href="https://www.google.fr/maps/dir/48.6144167,7.7087412/March%C3%A9+Frais+de+St%C3%A9phane+Biot,+51+Rue+de+Strasbourg,+67206+Mittelhausbergen/@48.6120922,7.7009841,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x4796b7e8b96b27a5:0x5629eff44b35cd22!2m2!1d7.6987196!2d48.6097677!3e3!5m1!1e1" target="_blank">
               <h2 class="post-title">
                 <?php echo "Marché Biot : " . menuDuJour::marcheBiotPrice();?>
               </h2>
@@ -92,7 +92,7 @@ $dw = menuDuJour::getDay(); ?>
           </div>
           <hr>
           <div class="post-preview">
-            <a href="https://www.restaurant-le-k.com/a-table/">
+            <a href="https://www.google.fr/maps/dir/48.6144167,7.7087412/Le+K,+2+Avenue+de+l'Europe,+67300+Schiltigheim/@48.6128001,7.709134,17z/data=!3m1!4b1!4m17!1m6!3m5!1s0x4796b7e35e6cb0bd:0xacbe350ad43d37cb!2sLe+K!8m2!3d48.6119471!4d7.7135983!4m9!1m1!4e1!1m5!1m1!1s0x4796b7e35e6cb0bd:0xacbe350ad43d37cb!2m2!1d7.7135983!2d48.6119471!3e3!5m1!1e1" target="_blank">
               <h2 class="post-title">
                 Au "K" : 13€
               </h2>
@@ -107,7 +107,7 @@ $dw = menuDuJour::getDay(); ?>
           </div>
           <hr>
           <div class="post-preview">
-            <a href="http://www.lapetitepause.fr/">
+            <a href="https://www.google.fr/maps/dir/48.6144167,7.7087412/La+Petite+Pause+Schiltigheim,+Rue+Alfred+Kastler,+Schiltigheim/@48.6124495,7.7124531,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x4796c81d207fde15:0x47ddda0880f8dd3!2m2!1d7.720553!2d48.610507!3e3!5m1!1e1" target="_blank">
               <h2 class="post-title">
                 <?php echo "La Petite Pause : " . menuDuJour::laPetitePausePrice();?>
               </h2>
@@ -121,7 +121,7 @@ $dw = menuDuJour::getDay(); ?>
           </div>
           <hr>
           <div class="post-preview">
-            <a href="https://www.facebook.com/Papaciccio2007/">
+            <a href="https://www.google.fr/maps/dir/48.6144167,7.7087412/Papa+Ciccio,+Route+du+G%C3%A9n%C3%A9ral+de+Gaulle,+Schiltigheim/@48.6095721,7.7147292,15z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x4796c814f00a4191:0x8c4b5b01a1ce1582!2m2!1d7.7378317!2d48.603201!3e3!5m1!1e1" target="_blank">
               <h2 class="post-title">
                 Chez Papa Ciccio : 6,50€
               </h2>
