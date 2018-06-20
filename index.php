@@ -77,13 +77,12 @@ $dw = menuDuJour::getDay(); ?>
           <div class="post-preview">
             <a href="http://sbiot.fr/accueil/plats-jour-de-semaine/">
               <h2 class="post-title">
-                Marché Biot :
+                <?php echo "Marché Biot : " . menuDuJour::marcheBiotPrice();?>
               </h2>
               <h3 class="post-subtitle">
                 <?php echo menuDuJour::marcheBiot()[0];
                 if(menuDuJour::marcheBiotVege()[0]){
                     echo "<br/><p style='color:#00cc66'>Vege friendly : " . menuDuJour::marcheBiotVege() . "</p>" ;}?>
-
               </h3>
             </a>
             <p class="post-meta">Cuisiné par

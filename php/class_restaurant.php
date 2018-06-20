@@ -112,6 +112,15 @@ class menuDuJour {
         }
     }
 
+    public function marcheBiotPrice(){
+        $curlResult = self::marcheBiot()[1];
+        $dw = self::getDay();
+        preg_match_all(
+        "/(?<=div class='value-col value-1'>)(.*?)(?=<\/div><div class='value-col value-2'>)/",
+        $curlResult, $menu);
+            return($menu[0][0]);
+    }
+
     public function leK(){
         $url = 'https://www.restaurant-le-k.com/a-table/';
         $curlResult = self::getUrlInfo($url);
