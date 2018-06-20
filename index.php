@@ -89,8 +89,6 @@ $dw = menuDuJour::getDay(); ?>
             <p class="post-meta">Cuisiné par
               <a href="#">Hungry bot</a>
               <?php
-              $mB = menuDuJour::getDay();
-              var_dump($mB);
               echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h03";?></p>
           </div>
           <hr>
