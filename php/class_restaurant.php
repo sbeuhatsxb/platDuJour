@@ -40,6 +40,7 @@ class menuDuJour {
         $dw = self::DAYWEEK[$dw];
         return $dw;
     }
+
     /* return STR */
     private function getUrlInfo($url){
         $ch = curl_init();
@@ -57,6 +58,7 @@ class menuDuJour {
         $url = 'http://sbiot.fr/accueil/plats-jour-de-semaine/';
         $curlResult = self::getUrlInfo($url);
         $dw = self::getDay();
+
         $pregMatch = "/(?<=" . self::getDayMinusOneDay() . "<\/div><\/div><\/li><li class='odd'><div><p class='item-text'>)(.*?)(<\/p>)/";
 
         if($dw == "Lundi"){
@@ -71,9 +73,10 @@ class menuDuJour {
     public function marcheBiotVege(){
         $curlResult = self::marcheBiot()[1];
         $dw = self::getDay();
-        $pregMatch = "/(?=". $dw ."<\/div><\/div><\/li><li class='even'><div><p class='item-text'>).+?(?=<\/p><p class='desc'><img src=)/";
 
+        $pregMatch = "/(?=". $dw ."<\/div><\/div><\/li><li class='even'><div><p class='item-text'>).+?(?=<\/p><p class='desc'><img src=)/";
         $trim = ":" . $dw . "</div></div></li><li class='even'><div><p class='item-text'>";
+
         preg_match_all($pregMatch,$curlResult, $menu);
         return(trim($menu[0][0], $trim));
     }
@@ -81,6 +84,7 @@ class menuDuJour {
     public function marcheBiotPrice(){
         $curlResult = self::marcheBiot()[1];
         $dw = self::getDay();
+
         preg_match_all(
         "/(?<=div class='value-col value-1'>)(.*?)(?=<\/div><div class='value-col value-2'>)/",
         $curlResult, $menu);
@@ -167,9 +171,8 @@ class menuDuJour {
     public function laPetitePausePrice(){
         $curlResult = self::laPetitePause()[1];
         $dw = self::getDay();
-        preg_match_all(
-        "/(?<=<h2>Notre Chef vous propose ses Plats du Jour à )(.*?)(?=<\/h2>)/",
-        $curlResult, $menu);
+
+        preg_match_all("/(?<=<h2>Notre Chef vous propose ses Plats du Jour à )(.*?)(?=<\/h2>)/", $curlResult, $menu);
             return($menu[0][0]);
     }
 }
