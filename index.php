@@ -74,6 +74,7 @@ $dw = menuDuJour::getDay(); ?>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+
           <div class="post-preview">
             <a href="https://www.google.fr/maps/dir/48.6144167,7.7087412/March%C3%A9+Frais+de+St%C3%A9phane+Biot,+51+Rue+de+Strasbourg,+67206+Mittelhausbergen/@48.6120922,7.7009841,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x4796b7e8b96b27a5:0x5629eff44b35cd22!2m2!1d7.6987196!2d48.6097677!3e3!5m1!1e1" target="_blank">
               <h2 class="post-title">
@@ -88,9 +89,18 @@ $dw = menuDuJour::getDay(); ?>
             <p class="post-meta">Cuisiné par
               <a href="#">Hungry bot</a>
               <?php
-              echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h03";?></p>
+              echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h03";?>
+              <a href="http://sbiot.fr/accueil/plats-jour-de-semaine/">
+                <span class="fa-stack fa-lg color:#1E90FF">
+                  <i class="fa fa-circle fa-stack-1x"></i>
+                  <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </p>
           </div>
+
           <hr>
+
           <div class="post-preview">
             <a href="https://www.google.fr/maps/dir/48.6144167,7.7087412/Le+K,+2+Avenue+de+l'Europe,+67300+Schiltigheim/@48.6128001,7.709134,17z/data=!3m1!4b1!4m17!1m6!3m5!1s0x4796b7e35e6cb0bd:0xacbe350ad43d37cb!2sLe+K!8m2!3d48.6119471!4d7.7135983!4m9!1m1!4e1!1m5!1m1!1s0x4796b7e35e6cb0bd:0xacbe350ad43d37cb!2m2!1d7.7135983!2d48.6119471!3e3!5m1!1e1" target="_blank">
               <h2 class="post-title">
@@ -103,6 +113,12 @@ $dw = menuDuJour::getDay(); ?>
             <p class="post-meta">Cuisiné par
               <a href="#">Hungry bot</a>
               <?php echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h02";?>
+              <a href="https://www.restaurant-le-k.com/a-table/">
+                <span class="fa-stack fa-lg color:#1E90FF">
+                  <i class="fa fa-circle fa-stack-1x"></i>
+                  <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
             </p>
           </div>
           <hr>
@@ -117,9 +133,18 @@ $dw = menuDuJour::getDay(); ?>
             </a>
             <p class="post-meta">Cuisiné par
               <a href="#">Hungry bot</a>
-              <?php echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h02";?></p>
+              <?php echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h02";?>
+              <a href="http://www.lapetitepause.fr/">
+                <span class="fa-stack fa-lg color:#1E90FF">
+                  <i class="fa fa-circle fa-stack-1x"></i>
+                  <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </p>
           </div>
+
           <hr>
+
           <div class="post-preview">
             <a href="https://www.google.fr/maps/dir/48.6144167,7.7087412/Papa+Ciccio,+Route+du+G%C3%A9n%C3%A9ral+de+Gaulle,+Schiltigheim/@48.6095721,7.7147292,15z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x4796c814f00a4191:0x8c4b5b01a1ce1582!2m2!1d7.7378317!2d48.603201!3e3!5m1!1e1" target="_blank">
               <h2 class="post-title">
@@ -151,9 +176,41 @@ $dw = menuDuJour::getDay(); ?>
             </a>
             <p class="post-meta">Cuisiné par
               <a href="#">Hungry bot</a>
-              <?php echo "et ce tous les jours de la semaine";?></p>
+              <?php echo "et ce tous les jours de la semaine";?>
+              <a href="https://www.facebook.com/Papaciccio2007/">
+                <span class="fa-stack fa-lg color:#1E90FF">
+                  <i class="fa fa-circle fa-stack-1x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </p>
           </div>
+
           <hr>
+
+          <div class="post-preview">
+            <a href="https://www.google.fr/maps/dir/48.6144167,7.7087412/Le+K,+2+Avenue+de+l'Europe,+67300+Schiltigheim/@48.6128001,7.709134,17z/data=!3m1!4b1!4m17!1m6!3m5!1s0x4796b7e35e6cb0bd:0xacbe350ad43d37cb!2sLe+K!8m2!3d48.6119471!4d7.7135983!4m9!1m1!4e1!1m5!1m1!1s0x4796b7e35e6cb0bd:0xacbe350ad43d37cb!2m2!1d7.7135983!2d48.6119471!3e3!5m1!1e1" target="_blank">
+              <h2 class="post-title">
+                Air Bagels : 6,70€ à 10,50€
+              </h2>
+            </a>
+            <a href="https://airbagels-schiltigheim.miam-express.com/">
+              <h3 class="post-subtitle">
+                Salade ou Bagel. <br/><br/>
+                Plus de détails sur le site...
+              </h3>
+            </a>
+            <p class="post-meta">Cuisiné par
+              <a href="#">Hungry bot</a>
+              <?php echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h02";?>
+              <a href="https://airbagels-schiltigheim.miam-express.com/">
+                <span class="fa-stack fa-lg color:#1E90FF">
+                  <i class="fa fa-circle fa-stack-1x"></i>
+                  <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </p>
+          </div>
           <!-- Pager -->
           <!-- <div class="clearfix">
             <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
@@ -162,7 +219,7 @@ $dw = menuDuJour::getDay(); ?>
       </div>
     </div>
 
-    <hr>
+    <!-- <hr> -->
 
     <!-- Footer -->
     <footer>
