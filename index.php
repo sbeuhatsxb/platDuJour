@@ -189,7 +189,7 @@ $dw = menuDuJour::getDay(); ?>
           <hr>
 
           <div class="post-preview">
-            <a href="https://www.google.fr/maps/dir/48.6144167,7.7087412/Le+K,+2+Avenue+de+l'Europe,+67300+Schiltigheim/@48.6128001,7.709134,17z/data=!3m1!4b1!4m17!1m6!3m5!1s0x4796b7e35e6cb0bd:0xacbe350ad43d37cb!2sLe+K!8m2!3d48.6119471!4d7.7135983!4m9!1m1!4e1!1m5!1m1!1s0x4796b7e35e6cb0bd:0xacbe350ad43d37cb!2m2!1d7.7135983!2d48.6119471!3e3!5m1!1e1" target="_blank">
+            <a href="https://www.google.fr/maps/dir/48.6144167,7.7087412/Air+Bagels,+2+Rue+de+Dublin,+67300+Schiltigheim/@48.6137486,7.7076986,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x4796b7fb3e83d977:0xa6c87baeb69c99a9!2m2!1d7.7100167!2d48.6130662!3e3!5m1!1e1" target="_blank">
               <h2 class="post-title">
                 Air Bagels : 6,70€ à 10,50€
               </h2>
@@ -202,7 +202,7 @@ $dw = menuDuJour::getDay(); ?>
             </a>
             <p class="post-meta">Cuisiné par
               <a href="#">Hungry bot</a>
-              <?php echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h02";?>
+              <?php echo "et ce tous les jours de la semaine";?>
               <a href="https://airbagels-schiltigheim.miam-express.com/">
                 <span class="fa-stack fa-lg color:#1E90FF">
                   <i class="fa fa-circle fa-stack-1x"></i>
