@@ -80,12 +80,18 @@ $dw = menuDuJour::getDay(); ?>
                 Marché Biot :
               </h2>
               <h3 class="post-subtitle">
-                <?php echo menuDuJour::marcheBiot() ?>
+                <?php echo menuDuJour::marcheBiot()[0];
+                if(menuDuJour::marcheBiotVege()[0]){
+                    echo "<br/><p style='color:#00cc66'>Vege friendly : " . menuDuJour::marcheBiotVege() . "</p>" ;}?>
+
               </h3>
             </a>
             <p class="post-meta">Cuisiné par
               <a href="#">Hungry bot</a>
-              <?php echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h01";?></p>
+              <?php
+              $mB = menuDuJour::getDay();
+              var_dump($mB);
+              echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h03";?></p>
           </div>
           <hr>
           <div class="post-preview">
@@ -94,7 +100,7 @@ $dw = menuDuJour::getDay(); ?>
                 Au "K" :
               </h2>
               <h3 class="post-subtitle">
-                <?php echo menuDuJour::leK() ?>
+                <?php echo menuDuJour::leK() ;?>
               </h3>
             </a>
             <p class="post-meta">Cuisiné par
@@ -109,7 +115,7 @@ $dw = menuDuJour::getDay(); ?>
                 La Petite Pause
               </h2>
               <h3 class="post-subtitle">
-                <?php echo menuDuJour::laPetitePause() ?>
+                <?php echo menuDuJour::laPetitePause() ;?>
               </h3>
             </a>
             <p class="post-meta">Cuisiné par

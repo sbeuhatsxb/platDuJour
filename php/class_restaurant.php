@@ -52,23 +52,62 @@ class menuDuJour {
         switch ($dw){
             case "Lundi":
                 preg_match_all("/(?<=<li class='odd'><div><p class='item-text'>)(.*?)(<\/p><p class='desc'>)/", $curlResult, $menu);
-                return($menu[1][0]);
+                return(array($menu[1][0], $curlResult));
                 break;
             case "Mardi":
                 preg_match_all("/(?<=Lundi<\/div><\/div><\/li><li class='odd'><div><p class='item-text'>)(.*?)(<\/p>)/", $curlResult, $menu);
-                return($menu[1][0]);
+                return(array($menu[1][0], $curlResult));
                 break;
             case "Mercredi":
-                preg_match_all("/(?<=Mardi<\/div><\/div><\/li><li class='even'><div><p class='item-text'>)(.*?)(<\/p>)/", $curlResult, $menu);
-                return($menu[1][0]);
+                preg_match_all("/(?<=Mardi<\/div><\/div><\/li><li class='odd'><div><p class='item-text'>)(.*?)(<\/p>)/", $curlResult, $menu);
+                return(array($menu[1][0], $curlResult));
                 break;
             case "Jeudi":
                 preg_match_all("/(?<=Mercredi<\/div><\/div><\/li><li class='odd'><div><p class='item-text'>)(.*?)(<\/p>)/", $curlResult, $menu);
-                return($menu[1][0]);
+                return(array($menu[1][0], $curlResult));
                 break;
             case "Vendredi":
                 preg_match_all("/(?<=Jeudi<\/div><\/div><\/li><li class='odd'><div><p class='item-text'>)(.*?)(<\/p>)/", $curlResult, $menu);
-                return($menu[1][0]);
+                return(array($menu[1][0], $curlResult));
+                break;
+        }
+    }
+
+    public function marcheBiotVege(){
+        $curlResult = self::marcheBiot()[1];
+        $dw = self::getDay();
+
+        $trim = ":" . self::getDay() . "</div></div></li><li class='even'><div><p class='item-text'>";
+        switch ($dw){
+            case "Lundi":
+            preg_match_all(
+            "/(?=Lundi<\/div><\/div><\/li><li class='even'><div><p class='item-text'>).+?(?=<\/p><p class='desc'><img src=)/",
+            $curlResult, $menu);
+                return(trim($menu[0][0], $trim));
+                break;
+            case "Mardi":
+            preg_match_all(
+            "/(?=Mardi<\/div><\/div><\/li><li class='even'><div><p class='item-text'>).+?(?=<\/p><p class='desc'><img src=)/",
+            $curlResult, $menu);
+                return(trim($menu[0][0], $trim));
+                break;
+            case "Mercredi":
+            preg_match_all(
+            "/(?=Mercredi<\/div><\/div><\/li><li class='even'><div><p class='item-text'>).+?(?=<\/p><p class='desc'><img src=)/",
+            $curlResult, $menu);
+                return(trim($menu[0][0], $trim));
+                break;
+            case "Jeudi":
+            preg_match_all(
+            "/(?=Jeudi<\/div><\/div><\/li><li class='even'><div><p class='item-text'>).+?(?=<\/p><p class='desc'><img src=)/",
+            $curlResult, $menu);
+                return(trim($menu[0][0], $trim));
+                break;
+            case "Vendredi":
+            preg_match_all(
+            "/(?=Vendredi<\/div><\/div><\/li><li class='even'><div><p class='item-text'>).+?(?=<\/p><p class='desc'><img src=)/",
+            $curlResult, $menu);
+                return(trim($menu[0][0], $trim));
                 break;
         }
     }
