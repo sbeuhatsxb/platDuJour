@@ -94,7 +94,7 @@ $dw = menuDuJour::getDay(); ?>
           <div class="post-preview">
             <a href="https://www.restaurant-le-k.com/a-table/">
               <h2 class="post-title">
-                Au "K" :
+                Au "K" : 13€
               </h2>
               <h3 class="post-subtitle">
                 <?php echo menuDuJour::leK() ;?>
@@ -109,10 +109,10 @@ $dw = menuDuJour::getDay(); ?>
           <div class="post-preview">
             <a href="http://www.lapetitepause.fr/">
               <h2 class="post-title">
-                La Petite Pause
+                <?php echo "La Petite Pause : " . menuDuJour::laPetitePausePrice();?>
               </h2>
               <h3 class="post-subtitle">
-                <?php echo menuDuJour::laPetitePause() ;?>
+                <?php echo menuDuJour::laPetitePause()[0] ;?>
               </h3>
             </a>
             <p class="post-meta">Cuisiné par
@@ -123,7 +123,7 @@ $dw = menuDuJour::getDay(); ?>
           <div class="post-preview">
             <a href="https://www.facebook.com/Papaciccio2007/">
               <h2 class="post-title">
-                Les classiques de chez Papa Ciccio
+                Chez Papa Ciccio : 6,50€
               </h2>
               <h3 class="post-subtitle">
 

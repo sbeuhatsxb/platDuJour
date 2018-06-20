@@ -194,8 +194,17 @@ class menuDuJour {
         }
         $totalElemInArray = count($newArray);
         unset($newArray[$totalElemInArray-1]);
-        return implode($newArray, " ");
+        return array(implode($newArray, " "), $curlResult);
 
+    }
+
+    public function laPetitePausePrice(){
+        $curlResult = self::laPetitePause()[1];
+        $dw = self::getDay();
+        preg_match_all(
+        "/(?<=<h2>Notre Chef vous propose ses Plats du Jour à )(.*?)(?=<\/h2>)/",
+        $curlResult, $menu);
+            return($menu[0][0]);
     }
 }
 
