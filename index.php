@@ -45,7 +45,7 @@ $dw = menuDuJour::getDay(); ?>
               <a class="nav-link" href="about.html">About</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="https://galek.spyzone.fr/">Votez</a>
+              <a class="nav-link" href="https://galek.spyzone.fr/" target="_blank">Votez</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -90,7 +90,7 @@ $dw = menuDuJour::getDay(); ?>
               <a href="#">Hungry bot</a>
               <?php
               echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h03";?>
-              <a href="http://sbiot.fr/accueil/plats-jour-de-semaine/">
+              <a href="http://sbiot.fr/accueil/plats-jour-de-semaine/" target="_blank">
                 <span class="fa-stack fa-lg color:#1E90FF">
                   <i class="fa fa-circle fa-stack-1x"></i>
                   <i class="fa fa-link fa-stack-1x fa-inverse"></i>
@@ -113,7 +113,7 @@ $dw = menuDuJour::getDay(); ?>
             <p class="post-meta">Cuisiné par
               <a href="#">Hungry bot</a>
               <?php echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h02";?>
-              <a href="https://www.restaurant-le-k.com/a-table/">
+              <a href="https://www.restaurant-le-k.com/a-table/" target="_blank">
                 <span class="fa-stack fa-lg color:#1E90FF">
                   <i class="fa fa-circle fa-stack-1x"></i>
                   <i class="fa fa-link fa-stack-1x fa-inverse"></i>
@@ -136,7 +136,7 @@ $dw = menuDuJour::getDay(); ?>
             <p class="post-meta">Cuisiné par
               <a href="#">Hungry bot</a>
               <?php echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h02";?>
-              <a href="http://www.lapetitepause.fr/">
+              <a href="http://www.lapetitepause.fr/" target="_blank">
                 <span class="fa-stack fa-lg color:#1E90FF">
                   <i class="fa fa-circle fa-stack-1x"></i>
                   <i class="fa fa-link fa-stack-1x fa-inverse"></i>
@@ -148,7 +148,7 @@ $dw = menuDuJour::getDay(); ?>
           <hr>
 
           <div class="post-preview">
-            <a href="https://www.google.fr/maps/dir/48.6144167,7.7087412/La+Petite+Pause+Schiltigheim,+Rue+Alfred+Kastler,+Schiltigheim/@48.6124495,7.7124531,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x4796c81d207fde15:0x47ddda0880f8dd3!2m2!1d7.720553!2d48.610507!3e3!5m1!1e1" target="_blank">
+            <a href="https://www.leshirondelles.fr/" target="_blank">
               <h2 class="post-title">
                 <?php echo "Les Hirondelles : 7,40€"?>
               </h2>
@@ -159,7 +159,7 @@ $dw = menuDuJour::getDay(); ?>
             <p class="post-meta">Cuisiné par
               <a href="#">Hungry bot</a>
               <?php echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h01";?>
-              <a href="https://www.leshirondelles.fr/">
+              <a href="https://www.leshirondelles.fr/" target="_blank">
                 <span class="fa-stack fa-lg color:#1E90FF">
                   <i class="fa fa-circle fa-stack-1x"></i>
                   <i class="fa fa-link fa-stack-1x fa-inverse"></i>
@@ -202,7 +202,7 @@ $dw = menuDuJour::getDay(); ?>
             <p class="post-meta">Cuisiné par
               <a href="#">Hungry bot</a>
               <?php echo "et ce tous les jours de la semaine";?>
-              <a href="https://www.facebook.com/Papaciccio2007/">
+              <a href="https://www.facebook.com/Papaciccio2007/"  target="_blank">
                 <span class="fa-stack fa-lg color:#1E90FF">
                   <i class="fa fa-circle fa-stack-1x"></i>
                   <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -219,7 +219,7 @@ $dw = menuDuJour::getDay(); ?>
                 Air Bagels : 6,70€ à 10,50€
               </h2>
             </a>
-            <a href="https://airbagels-schiltigheim.miam-express.com/">
+            <a href="https://airbagels-schiltigheim.miam-express.com/" target="_blank">
               <h3 class="post-subtitle">
                 Salade ou Bagel. <br/><br/>
                 Plus de détails sur le site...
@@ -228,7 +228,7 @@ $dw = menuDuJour::getDay(); ?>
             <p class="post-meta">Cuisiné par
               <a href="#">Hungry bot</a>
               <?php echo "et ce tous les jours de la semaine";?>
-              <a href="https://airbagels-schiltigheim.miam-express.com/">
+              <a href="https://airbagels-schiltigheim.miam-express.com/" target="_blank">
                 <span class="fa-stack fa-lg color:#1E90FF">
                   <i class="fa fa-circle fa-stack-1x"></i>
                   <i class="fa fa-link fa-stack-1x fa-inverse"></i>
