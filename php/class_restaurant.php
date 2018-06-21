@@ -91,6 +91,19 @@ class menuDuJour {
             return($menu[0][0]);
     }
 
+    public function lesHirondelles(){
+        $url = 'https://www.leshirondelles.fr/';
+        $curlResult = self::getUrlInfo($url);
+
+        $firstPregMatch = '/(?<=<h2>Le Menu du jour<\/h2>)([^)]+)(?=a href="https:\/\/www.leshirondelles.fr)/';
+        preg_match_all($firstPregMatch, $curlResult, $menu);
+
+        $secondPregMatch = "/(?<=<p>)(.*)(?=)/";
+        preg_match_all($secondPregMatch, $menu[0][0], $menu);
+
+        return(array($menu[0][0], $curlResult));
+}
+
     public function leK(){
         $url = 'https://www.restaurant-le-k.com/a-table/';
         $curlResult = self::getUrlInfo($url);

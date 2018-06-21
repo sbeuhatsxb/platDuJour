@@ -121,7 +121,9 @@ $dw = menuDuJour::getDay(); ?>
               </a>
             </p>
           </div>
+
           <hr>
+
           <div class="post-preview">
             <a href="https://www.google.fr/maps/dir/48.6144167,7.7087412/La+Petite+Pause+Schiltigheim,+Rue+Alfred+Kastler,+Schiltigheim/@48.6124495,7.7124531,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x4796c81d207fde15:0x47ddda0880f8dd3!2m2!1d7.720553!2d48.610507!3e3!5m1!1e1" target="_blank">
               <h2 class="post-title">
@@ -135,6 +137,29 @@ $dw = menuDuJour::getDay(); ?>
               <a href="#">Hungry bot</a>
               <?php echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h02";?>
               <a href="http://www.lapetitepause.fr/">
+                <span class="fa-stack fa-lg color:#1E90FF">
+                  <i class="fa fa-circle fa-stack-1x"></i>
+                  <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </p>
+          </div>
+
+          <hr>
+
+          <div class="post-preview">
+            <a href="https://www.google.fr/maps/dir/48.6144167,7.7087412/La+Petite+Pause+Schiltigheim,+Rue+Alfred+Kastler,+Schiltigheim/@48.6124495,7.7124531,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x4796c81d207fde15:0x47ddda0880f8dd3!2m2!1d7.720553!2d48.610507!3e3!5m1!1e1" target="_blank">
+              <h2 class="post-title">
+                <?php echo "Les Hirondelles : 7,40€"?>
+              </h2>
+              <h3 class="post-subtitle">
+                <?php echo menuDuJour::lesHirondelles()[0] ;?>
+              </h3>
+            </a>
+            <p class="post-meta">Cuisiné par
+              <a href="#">Hungry bot</a>
+              <?php echo "ce " . strtolower(menuDuJour::getDay()) . " à 8h01";?>
+              <a href="https://www.leshirondelles.fr/">
                 <span class="fa-stack fa-lg color:#1E90FF">
                   <i class="fa fa-circle fa-stack-1x"></i>
                   <i class="fa fa-link fa-stack-1x fa-inverse"></i>
